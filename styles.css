@@ -1,27 +1,75 @@
+.color1 {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  background-image: linear-gradient(to top, #7a7a7a, #9a9a9a, #bababa, #dcdcdc, #ffffff);
+}
+
+.color2 {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  background-image: linear-gradient(to top, #006b62, #008785, #00a4ab, #00c1d4, #00deff);
+}
+
+.color3 {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  background-image: linear-gradient(to top, #ff9b00, #ffb100, #ffc700, #ffde00, #fff400);
+}
+
+.color4 {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  background-image: linear-gradient(to top, #ff00de, #fa4eea, #f570f3, #f18afa, #eea1ff);
+}
+
+.color5 {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  background-image: linear-gradient(to top, #00656f, #008c8b, #00b393, #00da86, #00ff63);
+}
+
+.color6 {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  background-image: linear-gradient(to top, #6f0000, #910a06, #b51908, #da2706, #ff3700);
+}
+
 h1 {
-  font-family: Montserrat;
+  font-family: Poppins;
   font-size: clamp(3rem, 4vw, 7rem);
   border-radius: 4rem;
-  font-weight: 500;
+  font-weight: 400;
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
   color: whitesmoke;
 }
 
 h2 {
-  font-family: Montserrat;
+  font-family: Poppins;
   font-weight: 400;
   font-size: 2rem;
   color: rgb(89, 89, 89);
 }
 
 .hero-text {
-  font-family: Montserrat;
+  font-family: Poppins;
   font-size: 2vh;
 }
 
 p {
   color: whitesmoke;
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
@@ -56,9 +104,41 @@ ul, li {
 
 h3 {
   color: whitesmoke;
-  font-family: Montserrat;
+  font-family: Poppins;
   font-weight: 400;
   font-size: 2.5rem;
+}
+
+.card-title {
+  font-family: Poppins;
+  font-weight: 200;
+  margin-left: 5%;
+  margin-top: 0.5rem;
+}
+
+.card-price {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: gray;
+  font-size: 14px;
+  transition: all 500ms;
+}
+
+.card-title-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.layout-link {
+  color: whitesmoke;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 200;
+  transition: all 0.2s;
+}
+
+.layout-link:hover {
+  color: rgb(255, 196, 0);
 }
 
 .nav-button {
@@ -70,7 +150,7 @@ h3 {
   border-right: none;
   cursor: pointer;
   color: whitesmoke;
-  font-family: Montserrat;
+  font-family: Poppins;
   font-size: 1.5vh;
   margin-left: 2vh;
   margin-right: 2vh;
@@ -86,7 +166,7 @@ h3 {
 .order-btn {
   background-color: rgb(255, 196, 0);
   color: black;
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   border-style: solid;
   border-color: rgba(250, 235, 215, 0);
@@ -135,7 +215,7 @@ h3 {
 .typing-btn {
   background-color: rgba(0, 255, 255, 0);
   color: rgb(255, 255, 255);
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   border-style: solid;
   border-color: rgb(255, 255, 255);
@@ -155,21 +235,68 @@ h3 {
   border-color: rgb(255, 196, 0);
 }
 
+.card-button {
+  background-color: rgb(255, 196, 0);
+  color: black;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  border-style: solid;
+  border-color: rgba(250, 235, 215, 0);
+  border-width: 1px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+.card-button:hover {
+  background-color: black;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  background-color: turquoise;
+  outline: none; /* Remove outline */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: Poppins;
+  transition: all 0.2s;
+}
+
+#myBtn:hover {
+  background-color: rgb(255, 196, 0); /* Add a dark-grey background on hover */
+}
+
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-color: rgb(67, 67, 67);
+  background-color: rgb(46, 46, 46);
+  transition: all 0.3s;
 }
 
 .logo-name-container {
-  margin-left: 15%;
   display: flex;
   flex-direction: row;
   min-height: 200px;
   overflow: hidden;
+  margin-right: 30px;
 }
 
 .footer-logo {
@@ -217,7 +344,6 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: 15%;
 }
 
 .footer-links {
@@ -234,7 +360,7 @@ footer {
 }
 
 .footer-title {
-  font-family: Montserrat;
+  font-family: Poppins;
   color: whitesmoke;
 }
 
@@ -243,7 +369,7 @@ footer {
 }
 
 div#footer-links > ul > li {
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: rgb(181, 181, 181);
   line-height: 1.8rem;
   font-size: 0.85rem;
@@ -252,6 +378,125 @@ div#footer-links > ul > li {
 div#footer-links > ul > li:hover {
   color: rgb(255, 196, 0);
   scale: 1.05;
+}
+
+.home {
+  background: linear-gradient(transparent, black), url(backgrounds/blpnk.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.keeb-navigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-width: 1px;
+}
+
+.layout-selector {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.keeb-divider {
+  border-style: solid;
+  border-color: whitesmoke;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-width: 1px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 30px;
+}
+
+.keeb-2nd-layer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.keeb-card {
+  width: 30%;
+  height: 300px;
+  background-color: rgb(0, 0, 0);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+  transition: all 0.2s;
+}
+
+.pic-container {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 1rem;
+}
+
+.keeb-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: all 300ms;
+  border-radius: 5px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  width: 90%;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-width: 1px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.color-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.keeb-card:hover .keeb-pic {
+  transform: scale(1.05);
+}
+.keeb-card:hover .card-price {
+  color: turquoise;
 }
 
 @media only screen and (width < 600px) {
@@ -277,6 +522,10 @@ div#footer-links > ul > li:hover {
     margin-right: 0px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -295,8 +544,10 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to top, transparent 0%, black 100%);
+  background-color: rgba(0, 0, 0, 0.596);
   height: 7vh;
+  position: fixed;
+  width: 100vw;
   transition: all 0.3s;
   flex-wrap: wrap;
   z-index: 10;
@@ -470,7 +721,7 @@ nav:hover {
   justify-content: center;
   font-weight: 300;
   color: whitesmoke;
-  font-family: Montserrat;
+  font-family: Poppins;
 }
 
 .autoplay-progress svg {
@@ -652,7 +903,9 @@ nav:hover {
 }
 
 .keytypr-container {
-  background-color: rgb(49, 49, 49);
+  background-image: linear-gradient(to right, #1f1f1f, #252525, #292929, #2e2e2e, #323232);
+  background-size: cover;
+  background-position: center center;
   height: 50vh;
   margin-top: 7.5rem;
   margin-bottom: 7.5rem;

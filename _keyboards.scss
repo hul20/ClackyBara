@@ -1,0 +1,146 @@
+.home {
+  background: linear-gradient(transparent, black), url(backgrounds/blpnk.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+.keeb-navigator{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 5rem;
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
+
+  border-style: solid;
+  border-color: $wht;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-width: 1px;
+}
+
+.layout-selector{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.keeb-divider{
+  border-style: solid;
+  border-color: $wht;
+
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-width: 1px;
+
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
+  margin-bottom: $normal-space;
+}
+
+.keeb-2nd-layer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.keeb-card{
+  width: 30%;
+  height: 300px;
+  background-color: rgb(0, 0, 0);
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-bottom: 5rem;
+
+  transition: all 0.2s;
+}
+
+.pic-container{
+  width: 100%;
+  height: 80%;
+
+  margin-bottom: 1rem;
+}
+
+.keeb-pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+
+  transition: all 300ms;
+
+  border-radius: 5px;
+
+}
+
+.info-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-bottom: 1rem;
+
+  width: 90%;
+
+  border-style: solid;
+  border-color: $wht;
+
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-width: 1px;
+
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.color-options{
+  display: flex;
+  flex-direction: row;
+}
+
+.keeb-card:hover{
+  .keeb-pic{
+    transform: scale(1.05);
+  }
+
+  .card-price{
+    color: $secondary-accent;
+  }
+}
+
+
+
+

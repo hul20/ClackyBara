@@ -29,7 +29,7 @@
 .order-btn{
   background-color: $main-accent;
   color: black;
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 
   border-style: solid;
@@ -85,7 +85,7 @@
 .typing-btn{
   background-color:rgba(0, 255, 255, 0);
   color: rgb(255, 255, 255);
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 
   border-style: solid;
@@ -109,3 +109,54 @@
   border-color: $main-accent;
 }
 
+.card-button{
+  background-color: $main-accent;
+  color: black;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+
+  border-style: solid;
+  border-color: rgba(250, 235, 215, 0);
+  border-width: 1px;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  transition: all 0.2s;
+
+  margin-top: 1rem;
+}
+
+.card-button:hover{
+  background-color: black;
+  border-color: $wht;
+  color: $wht;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  background-color:$secondary-accent;
+  outline: none; /* Remove outline */
+  color: $blk; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: $main-font;
+
+  transition: all 0.2s;
+}
+
+#myBtn:hover {
+  background-color: $main-accent; /* Add a dark-grey background on hover */
+}

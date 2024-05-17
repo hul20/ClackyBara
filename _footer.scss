@@ -1,21 +1,24 @@
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
 
-  background-color: rgb(67, 67, 67);
+  background-color: rgb(46, 46, 46);
+
+  transition: all 0.3s;
 }
 
 .logo-name-container{
-  margin-left: $side-spacing;
 
   display: flex;
   flex-direction: row;
 
   min-height: 200px;
   overflow: hidden;
+
+  margin-right: $normal-space;
 }
 
 .footer-logo{
@@ -72,7 +75,6 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  margin-right: $side-spacing;
 }
 
 .footer-links{
@@ -99,7 +101,7 @@ footer {
 }
 
 div#footer-links > ul > li{
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: rgb(181, 181, 181);
   line-height: 1.8rem;
   font-size: 0.85rem;

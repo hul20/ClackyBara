@@ -3,6 +3,7 @@
 @import 'spacing';
 @import 'buttons';
 @import 'footer';
+@import 'keyboards';
 
 @media only screen and (width < 600px) {
   h1 {
@@ -34,6 +35,10 @@
 }
 //RESETTING MARGIN/PADDING
 
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -54,12 +59,12 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to top, transparent 0%, black 100%);
+  // background: linear-gradient(to top, transparent 0%, black 100%);
+  background-color: rgba(0, 0, 0, 0.596);
   height: 7vh;
 
-  // position: fixed;
-  // top: 0;
-  // width: 100%;
+  position: fixed;
+  width: 100vw;
 
   transition: all 0.3s;
 
@@ -479,7 +484,9 @@ nav:hover{
 //KEYTYPR LAYER
 
 .keytypr-container{
-  background-color: rgb(49, 49, 49);
+  background-image: linear-gradient(to right, #1f1f1f, #252525, #292929, #2e2e2e, #323232);
+  background-size: cover;
+  background-position: center center;
   height: 50vh;
 
   margin-top: 7.5rem;
