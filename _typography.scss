@@ -1,0 +1,85 @@
+//FONTS
+
+@import 'spacing';
+
+$main-font: Montserrat;
+$secondary-font: Poppins;
+$general: Roboto;
+
+//FONT-SIZES
+
+$header1: 64px;
+$header2: 32px;
+$header3: 24px;
+
+$general-size: 16px;
+$small-size: 12px;
+
+h1{
+  font-family: $main-font;
+  font-size: clamp(3rem, 4vw, 7rem);
+  border-radius: 4rem;
+  font-weight: 500;
+
+  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+
+  color: $wht;
+}
+
+h2{
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 2rem;
+
+  color: $gry;
+}
+
+.hero-text{
+  font-family: $main-font;
+  font-size: 2vh;
+}
+
+p{
+  color: $wht;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+ul, li {
+  color: $wht;
+  font-family: $secondary-font;
+  font-size: $general-size;
+  line-height: 200%;
+  list-style-type: none;
+}
+
+.cat-text{
+  font-family: $secondary-font;
+  font-size: clamp(1rem, 2vw, 4rem);
+  font-weight: 400;
+  text-align: center;
+
+  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+
+  color: $wht;
+}
+
+.desc{
+  margin-right:$normal-space;
+  font-size: $general-size;
+  line-height: 150%;
+  color: rgb(176, 176, 176);
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3{
+  color: $wht;  font-family: $main-font;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
