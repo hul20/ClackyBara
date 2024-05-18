@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+    initial-scale=1"
+    />
+
+    <title>ClackyBara | Components</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav id="navbar" class="navver">
+      <div class="nav-left">
+        <a href="index.html">
+          <div class="logo-container">
+            <img class="logo" src="logos/newlogo.png" alt="clackybara logo" />
+          </div>
+        </a>
+        <div class="nav-button-container">
+          <button class="nav-button">Keyboards</button>
+          <button class="nav-button">Components</button>
+          <button class="nav-button">TypeyBara</button>
+          <button class="nav-button">About</button>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-search"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-shopping-bag"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"
+            />
+            <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <div class="home-components" data-aos="fade-up">
+      <div class="home-content">
+        <h1 data-aos="fade-right">Components</h1>
+        <p data-aos="fade-left">Clack it your way | Customize with Clackybara components</p>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top &#x25B2;</button> 
+
+    <div class="comp-navigator" data-aos="fade-up">
+      <a href="#cases">
+        <div class="category-nav-btn">
+          <p class="layout-link1">Cases</p>
+        </div>
+      </a>
+      <a href="#switches">
+        <div class="category-nav-btn">
+          <p class="layout-link1">Switches</p>
+        </div>
+      </a>
+      <a href="#keycaps">
+        <div class="category-nav-btn">
+          <p class="layout-link1">Keycaps</p>
+        </div>
+      </a>
+      <a href="#deskmats">
+        <div class="category-nav-btn">
+          <p class="layout-link1">Deskmats</p>
+        </div>
+      </a>
+      <a href="#accessories">
+        <div class="category-nav-btn">
+          <p class="layout-link1">Accessories</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="the-latest" style="margin-bottom: 2rem;">
+      <h2 style="color: white;" data-aos="fade-left">&#8227; The latest Releases</h2>
+    </div>
+
+    <div class="swiperC mySwiperC" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="featured-latest">
+            <h1 style="margin-left: 2rem;">Kobuki-Cho R2</h1>
+            <button class="order-btn" style="margin-right: 2rem; margin-bottom: 2rem;">Pre-Order Now</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="featured-latest2"><h1 style="margin-left: 2rem;">PBTFans Ryokan</h1>
+            <button class="order-btn" style="margin-right: 2rem; margin-bottom: 2rem;">Pre-Order Now</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="featured-latest3">
+            <h1 style="margin-left: 2rem;">Pandora Artisan Tray</h1>
+            <button class="order-btn" style="margin-right: 2rem; margin-bottom: 2rem;">Pre-Order Now</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="featured-latest4">
+            <h1 style="margin-left: 2rem;">KBD8XMKIII</h1>
+            <button class="order-btn" style="margin-right: 2rem; margin-bottom: 2rem;">Pre-Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-divider" data-aos="fade-right"  id="cases">
+      <h2 style="color: white;">Keyboard Cases</h2>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="cases/holy60.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Holy60</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color1"></div>
+              <div class="color6"></div>
+              <div class="color5"></div>
+            </div>
+            <p class="card-price">$ 119.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="cases/tofu602.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Tofu65 2.0</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color1"></div>
+              <div class="color5"></div>
+              <div class="color3"></div>
+            </div>
+            <p class="card-price">$ 145.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="cases/tiger.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">JTK Rogue</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color1"></div>
+              <div class="color4"></div>
+              <div class="color2"></div>
+            </div>
+            <p class="card-price">$ 25.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-divider" data-aos="fade-right"  id="switches">
+      <h2 style="color: white;">Switches</h2>
+    </div>
+
+    <div class="keeb-sub-divider" data-aos="fade-right"  id="tkl">
+      <h2 style="color: white;">Linear</h2>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="switches/11_01d8ff2f-126c-42a3-8a7c-0985c07d6df4_1080x.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Cherry MX Black</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">1 pc</div>
+              <div class="color10">10 pcs</div>
+              <div class="color10">60 pcs</div>
+            </div>
+            <p class="card-price">$ 3.30</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="switches/lunar-probe.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Gateron Lunar Probe</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">1 pc</div>
+              <div class="color10">10 pcs</div>
+              <div class="color10">60 pcs</div>
+            </div>
+            <p class="card-price">$ 5.50</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="switches/sillyworks-hyacinth.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Sillyworks Hyacinth</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">1 pc</div>
+              <div class="color10">10 pcs</div>
+              <div class="color10">60 pcs</div>
+            </div>
+            <p class="card-price">$ 6.30</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-sub-divider" data-aos="fade-right"  id="tkl">
+      <h2 style="color: white;">Tactile</h2>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="switches/cherrybrown.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Cherry MX Brown</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">1 pc</div>
+              <div class="color10">10 pcs</div>
+              <div class="color10">60 pcs</div>
+            </div>
+            <p class="card-price">$ 5.30</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="switches/raptorhe.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Raptor HE Gaming</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">1 pc</div>
+              <div class="color10">10 pcs</div>
+              <div class="color10">60 pcs</div>
+            </div>
+            <p class="card-price">$ 2.50</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="switches/tecsee-purple.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Tecsee Purple Panda</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">1 pc</div>
+              <div class="color10">10 pcs</div>
+              <div class="color10">60 pcs</div>
+            </div>
+            <p class="card-price">$ 3.30</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-sub-divider" data-aos="fade-right"  id="tkl">
+      <h2 style="color: white;">Clicky</h2>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="switches/cherryblue.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Cherry MX Blue</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">1 pc</div>
+              <div class="color10">10 pcs</div>
+              <div class="color10">60 pcs</div>
+            </div>
+            <p class="card-price">$ 5.30</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="switches/gateron-melodic.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Gateron Melodic</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">1 pc</div>
+              <div class="color10">10 pcs</div>
+              <div class="color10">60 pcs</div>
+            </div>
+            <p class="card-price">$ 2.50</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="switches/emotoys-little-daisy.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Emotoys Little Daisy</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">1 pc</div>
+              <div class="color10">10 pcs</div>
+              <div class="color10">60 pcs</div>
+            </div>
+            <p class="card-price">$ 3.30</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-divider" data-aos="fade-right"  id="keycaps">
+      <h2 style="color: white;">Keycaps</h2>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="keycaps/pbtfans-crosshair.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">PBTFans Crosshair</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">68</div>
+              <div class="color10">TKL</div>
+              <div class="color10">100%</div>
+            </div>
+            <p class="card-price">$ 85.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="keycaps/jtk-hsa-eccentric.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">JTK Eccentric</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">68</div>
+              <div class="color10">TKL</div>
+              <div class="color10">100%</div>
+            </div>
+            <p class="card-price">$ 85.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="keycaps/jtk-hsa-rogue.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">JTK Rogue</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">68</div>
+              <div class="color10">TKL</div>
+              <div class="color10">100%</div>
+            </div>
+            <p class="card-price">$ 85.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="keycaps/gmk-dandy.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">GMK Dandy R2</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">68</div>
+              <div class="color10">TKL</div>
+              <div class="color10">100%</div>
+            </div>
+            <p class="card-price">$ 135.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="keycaps/gmk-cyl-prussian.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">GMK CYL Prussian</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">68</div>
+              <div class="color10">TKL</div>
+              <div class="color10">100%</div>
+            </div>
+            <p class="card-price">$ 185.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="keycaps/national-rhyme-pga.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">National Rhyme</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">68</div>
+              <div class="color10">TKL</div>
+              <div class="color10">100%</div>
+            </div>
+            <p class="card-price">$ 49.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-divider" data-aos="fade-right"  id="deskmats">
+      <h2 style="color: white;">Deskmats</h2>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="deskmats/panda-deskmat.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Holy Panda Deskmat</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">400</div>
+              <div class="color10">700</div>
+              <div class="color10">900</div>
+            </div>
+            <p class="card-price">$ 29.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="deskmats/mcwhale-deskamt.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">McWhale Deskmat</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">400</div>
+              <div class="color10">700</div>
+              <div class="color10">900</div>
+            </div>
+            <p class="card-price">$ 29.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="deskmats/journey.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Journey Deskmat</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">400</div>
+              <div class="color10">700</div>
+              <div class="color10">900</div>
+            </div>
+            <p class="card-price">$ 29.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="deskmats/lotr.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Lord of the Rings Deskmat</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">400</div>
+              <div class="color10">700</div>
+              <div class="color10">900</div>
+            </div>
+            <p class="card-price">$ 29.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="deskmats/noodle-bot-shop.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Noodle Bot Deskmat</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">400</div>
+              <div class="color10">700</div>
+              <div class="color10">900</div>
+            </div>
+            <p class="card-price">$ 29.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="deskmats/equilibrium.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Equilibrium Deskmat</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color10">400</div>
+              <div class="color10">700</div>
+              <div class="color10">900</div>
+            </div>
+            <p class="card-price">$ 29.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-divider" data-aos="fade-right"  id="accessories">
+      <h2 style="color: white;">Accessories</h2>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="accessories/pandora-artisan-tray.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Pandora Artisan Tray</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color1"></div>
+              <div class="color2"></div>
+            </div>
+            <p class="card-price">$ 55.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="accessories/wegtr-b-box.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">WEGTR B-Box Storage Box</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color1"></div>
+              <div class="color4"></div>
+            </div>
+            <p class="card-price">$ 200.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="accessories/switch-tester-frame.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Acrylic Switch Tester</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color1"></div>
+            </div>
+            <p class="card-price">$ 0.90-3.30</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keeb-2nd-layer" data-aos="fade-up">
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="accessories/diamond-cable.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Coiled Custom Cable White</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color1"></div>
+            </div>
+            <p class="card-price">$ 39.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="accessories/blue-cable.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Coiled Custom Cable Blue</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color2"></div>
+            </div>
+            <p class="card-price">$ 39.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="keeb-card">
+        <div class="pic-container">
+          <img src="accessories/black-cable.webp" alt="tgr jane" class="keeb-pic">
+        </div>
+        <a href="#" style="width: 100%;">
+          <p class="card-title">Coiled Custom Cable Black</p>
+        </a>
+        <div class="info-card">
+          <div>
+            <div class="color-options">
+              <div class="color1"></div>
+            </div>
+            <p class="card-price">$ 39.00</p>
+          </div>
+          <div class="card-title-right">
+            <a href="#">
+              <button class="card-button">Buy Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="didnt-find">
+      <h class="didnt-find-text">Didn't find what you're looking for?</h>
+      <p style="color: gray;">Shop our Keyboards!</p>
+      <a href="keyboards.html">
+        <button class="order-btn" style="margin-top: 2rem;">Shop Keyboards</button>
+      </a>
+    </div>
+
+
+
+    <footer>
+      <div class="logo-name-container">
+        <div class="logo-container">
+          <img src="logos/newlogo.png" alt="logo" class="footer-logo" />
+          <h2 style="color: whitesmoke;">ClackyBara</h2>
+        </div>
+        <div class="handle-container">
+          <div class="icons-container">
+            <a href="#">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-facebook"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-instagram"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                  />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M16.5 7.5l0 .01" />
+                </svg>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-x"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                </svg>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-discord"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                  <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                  <path
+                    d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3"
+                  />
+                  <path d="M7 16.5c3.5 1 6.5 1 10 0" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="desc-handle-container">
+            <p class="desc" style="margin-top: 0px;">
+              Craft Your Dream Keyboard. Discover custom mechanical keyboards,
+              parts, and accessories. <br />
+              <br />
+              Join our group buys and find your perfect clack.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="links-container">
+
+        <div class="footer-links">
+          <div class="footer-title-container">
+            <h class="footer-title"> Explore </h>
+          </div>
+          <div class="footer-link-list" id="footer-links">
+            <ul>
+              <li>Barebones Kits</li>
+              <li>Deskmats</li>
+              <li>Switches</li>
+              <li>Keycaps</li>
+              <li>Cases</li>
+              <li>PCBs</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-links">
+          <div class="footer-title-container">
+            <h class="footer-title"> Customer Support </h>
+          </div>
+          <div class="footer-link-list" id="footer-links">
+            <ul>
+              <li>Technical Support Resources</li>
+              <li>Feedback and Reviews</li>
+              <li>Live Chat Support</li>
+              <li>Warranty Service</li>
+              <li>Return Policy</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-links">
+          <div class="footer-title-container">
+            <h class="footer-title"> T & C </h>
+          </div>
+          <div class="footer-link-list" id="footer-links">
+            <ul>
+              <li>Technical Support Resources</li>
+              <li>Feedback and Reviews</li>
+              <li>Live Chat Support</li>
+              <li>Warranty Service</li>
+              <li>Return Policy</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script type="javascript" src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+    myFunction();
+    };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+    } else {
+    navbar.classList.remove("sticky");
+    }
+    }
+    </script>
+
+    <script>
+            // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      } 
+    </script>
+
+<script>
+  const progressCircle = document.querySelector(".autoplay-progress svg");
+  const progressContent = document.querySelector(".autoplay-progress span");
+  var swiper = new Swiper(".mySwiperC", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    on: {
+      autoplayTimeLeft(s, time, progress) {
+        progressCircle.style.setProperty("--progress", 1 - progress);
+        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+      },
+    },
+  });
+</script>
+  </body>
+</html>

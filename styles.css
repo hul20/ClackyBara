@@ -46,11 +46,33 @@
   background-image: linear-gradient(to top, #6f0000, #910a06, #b51908, #da2706, #ff3700);
 }
 
+.color10 {
+  height: 1rem;
+  border-radius: 1rem;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: rgb(209, 209, 209);
+  margin: 0.3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding-top: 0.1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: whitesmoke;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.color10:hover {
+  background-color: rgb(255, 196, 0);
+  color: black;
+}
+
 h1 {
   font-family: Poppins;
   font-size: clamp(3rem, 4vw, 7rem);
   border-radius: 4rem;
-  font-weight: 400;
+  font-weight: 500;
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
   color: whitesmoke;
 }
@@ -132,13 +154,27 @@ h3 {
 .layout-link {
   color: whitesmoke;
   font-family: Poppins;
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: 1.2rem;
+  font-weight: 300;
   transition: all 0.2s;
 }
 
 .layout-link:hover {
   color: rgb(255, 196, 0);
+}
+
+.layout-link1 {
+  color: whitesmoke;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: all 0.2s;
+}
+
+.didnt-find-text {
+  font-family: Poppins;
+  color: whitesmoke;
+  font-size: 3.5rem;
 }
 
 .nav-button {
@@ -266,7 +302,7 @@ h3 {
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none;
-  background-color: turquoise;
+  background-color: #40e0d0;
   outline: none; /* Remove outline */
   color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
@@ -289,6 +325,7 @@ footer {
   flex-wrap: wrap;
   background-color: rgb(46, 46, 46);
   transition: all 0.3s;
+  padding-bottom: 7rem;
 }
 
 .logo-name-container {
@@ -444,7 +481,7 @@ div#footer-links > ul > li:hover {
 
 .keeb-card {
   width: 30%;
-  height: 300px;
+  height: 350px;
   background-color: rgb(0, 0, 0);
   background-position: center center;
   background-size: cover;
@@ -496,7 +533,159 @@ div#footer-links > ul > li:hover {
   transform: scale(1.05);
 }
 .keeb-card:hover .card-price {
-  color: turquoise;
+  color: #40e0d0;
+}
+
+.home-components {
+  background: linear-gradient(transparent, black), url(backgrounds/TGR2.jpeg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.comp-navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.category-nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14vw;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-color: whitesmoke;
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.category-nav-btn:hover {
+  background: linear-gradient(90deg, rgba(75, 75, 75, 0) 0%, rgba(46, 132, 144, 0.74) 18.9%, #2499A9 32.4%, #00E0FF 51%, #239CAC 68.4%, rgba(49, 127, 137, 0.64) 79.9%, rgba(75, 75, 75, 0) 100%);
+}
+.category-nav-btn:hover .layout-link1 {
+  color: black;
+}
+
+.the-latest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.swiperC {
+  height: 50vh;
+  margin-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-latest {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.708)), url(backgrounds/kobuki-cho-r2.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.featured-latest2 {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.708)), url(backgrounds/pbtfansryokan.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.featured-latest3 {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.708)), url(backgrounds/pandora-artisan-tray.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.featured-latest4 {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.708)), url(backgrounds/KBD8XMKIII.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.keeb-sub-divider {
+  border-style: solid;
+  border-color: #40e0d0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-width: 1px;
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-bottom: 30px;
+}
+
+.didnt-find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 250px;
 }
 
 @media only screen and (width < 600px) {

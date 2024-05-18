@@ -1,0 +1,187 @@
+.home-components {
+  background: linear-gradient(transparent, black), url(backgrounds/TGR2.jpeg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+
+
+.comp-navigator{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
+
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+
+  flex-wrap: wrap;
+}
+
+.category-nav-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 14vw;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-color: $wht;
+  border-width: 1px;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  transition: all 0.8s;
+
+  cursor: pointer;
+}
+
+.category-nav-btn:hover{
+  // background: linear-gradient(90deg, rgba(75, 75, 75, 0.00) 0%, #2499A9 21.5%, #00E0FF 51%, #239CAC 80.5%, rgba(75, 75, 75, 0.00) 100%);
+
+  background: linear-gradient(90deg, rgba(75, 75, 75, 0.00) 0%, rgba(46, 132, 144, 0.74) 18.9%, #2499A9 32.4%, #00E0FF 51%, #239CAC 68.4%, rgba(49, 127, 137, 0.64) 79.9%, rgba(75, 75, 75, 0.00) 100%);
+
+
+
+  .layout-link1{
+    color: $blk;
+  }
+}
+
+.the-latest{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
+}
+
+//swiper
+
+.swiperC {
+  height: 50vh;
+
+  margin-bottom: 100px;
+
+  overflow-x: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-latest{
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.708)), url(backgrounds/kobuki-cho-r2.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  height: 50vh;
+
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.featured-latest2{
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.708)), url(backgrounds/pbtfansryokan.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  height: 50vh;
+
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.featured-latest3{
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.708)), url(backgrounds/pandora-artisan-tray.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  height: 50vh;
+
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.featured-latest4{
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.708)), url(backgrounds/KBD8XMKIII.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  height: 50vh;
+
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.keeb-sub-divider{
+  border-style: solid;
+  border-color: $secondary-accent;
+
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-width: 1px;
+
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-bottom: $normal-space;
+}
+
+.didnt-find{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 200px;
+  margin-bottom: 250px;
+}

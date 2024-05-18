@@ -5,7 +5,7 @@ $wht: whitesmoke;
 $gry: rgb(89, 89, 89);
 
 $main-accent: rgb(255, 196, 0);
-$secondary-accent: turquoise;
+$secondary-accent: #40e0d0;
 
 .color1{
   height: 1rem;
@@ -67,5 +67,31 @@ background-image: linear-gradient(to top, #7a7a7a, #9a9a9a, #bababa, #dcdcdc, #f
   background-image: linear-gradient(to top, #6f0000, #910a06, #b51908, #da2706, #ff3700);
 }
 
+.color10{
+  height: 1rem;
+  border-radius: 1rem;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: rgb(209, 209, 209);
+
+  margin: 0.3rem;
+
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding-top: 0.1rem;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: $wht;
+
+  transition: all 0.3s;
+
+  overflow: hidden;
+}
+
+.color10:hover{
+  background-color: $main-accent;
+  color: $blk;
+}
 
 
