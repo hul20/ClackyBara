@@ -233,7 +233,35 @@
       </div>
     </div>
 
-    <div class="second-layer" data-aos="fade-up">
+    <div class="swiperC mySwiperC" data-aos="fade-up" style="margin-top: 50px;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="featured-latest">
+            <h1 style="margin-left: 2rem;">Kobuki-Cho R2</h1>
+            <button class="order-btn" style="margin-right: 2rem; margin-bottom: 2rem;">Pre-Order Now</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="featured-latest2"><h1 style="margin-left: 2rem;">PBTFans Ryokan</h1>
+            <button class="order-btn" style="margin-right: 2rem; margin-bottom: 2rem;">Pre-Order Now</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="featured-latest3">
+            <h1 style="margin-left: 2rem;">Pandora Artisan Tray</h1>
+            <button class="order-btn" style="margin-right: 2rem; margin-bottom: 2rem;">Pre-Order Now</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="featured-latest4">
+            <h1 style="margin-left: 2rem;">KBD8XMKIII</h1>
+            <button class="order-btn" style="margin-right: 2rem; margin-bottom: 2rem;">Pre-Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="second-layer" data-aos="fade-up">
       <div class="second-layer-content">
         <div class="second-layer-left">
           <h1 data-aos="fade-right" style="margin-bottom: 1rem">Ryujin TKL</h1>
@@ -255,7 +283,7 @@
           <button class="order-btn">Pre-Order Now</button>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="shop-by-cat" data-aos="fade-left">
       <h2 style="color: white">Shop by Category</h2>
     </div>
@@ -540,7 +568,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -646,5 +674,30 @@
         }
       }
     </script>
+
+<script>
+  var swiperC = new Swiper(".mySwiperC", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    on: {
+      autoplayTimeLeft(s, time, progress) {
+        progressCircle.style.setProperty("--progress", 1 - progress);
+        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+      },
+    },
+  });
+</script>
   </body>
 </html>

@@ -1,3 +1,11 @@
+@import 'colors';
+@import 'typography';
+@import 'spacing';
+@import 'buttons';
+@import 'footer';
+@import 'keyboards';
+@import 'components';
+
 .home-typeybara {
   background: linear-gradient(transparent, black), url(backgrounds/keebs.jpg);
   background-size: cover;
@@ -612,8 +620,22 @@ $screen-1: #4D4A5D;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
+
+*:not(#myBtn){
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+// *:not(.myBtn) {
+//   margin: 0;
+// 	padding: 0;
+// 	box-sizing: border-box;
+//     transform-style: preserve-3d;
+// }
+
+
 /* Generic */
 // body{
 //     width: 100%;
