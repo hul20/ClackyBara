@@ -888,3 +888,33 @@ $depth-ky: 15px;
   margin-left: $side-spacing;
   margin-right: $side-spacing;
 }
+
+table {
+  color: $wht;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1rem;
+
+  width: 85%;
+
+  text-align: center;
+
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+th {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: $main-accent;
+
+  background-color: rgba(128, 128, 128, 0.159)
+}
+
+td {
+  font-weight: 300s;
+  color: gray;
+
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
