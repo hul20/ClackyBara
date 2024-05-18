@@ -709,7 +709,7 @@ div#footer-links > ul > li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: none;
 }
 
 .keeb-mini-container {
@@ -1518,11 +1518,19 @@ key {
 /*=================================*/
 @keyframes screen {
   0%, 90%, 96% {
-    background-color: turquoise;
+    background-image: linear-gradient(to top, #00deff, #00e9e8, #00efb9, #d9f14e, #ebdd12);
   }
   93%, 100% {
     background-color: rgba(32, 138, 199, 0.8);
   }
+}
+.leaderboards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /*# sourceMappingURL=typeybara.css.map */

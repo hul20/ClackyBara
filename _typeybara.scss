@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 10rem;
+  margin-bottom: none;
 }
 
 .keeb-mini-container{
@@ -873,6 +873,18 @@ $depth-ky: 15px;
 /*=================================*/
 /*=================================*/
 @keyframes screen {
-    0%, 90%, 96%{ background-color: turquoise}
+    0%, 90%, 96%{ background-image: linear-gradient(to top, #00deff, #00e9e8, #00efb9, #d9f14e, #ebdd12);}
     93%, 100%{ background-color: rgba($blue-2, .8); }
+}
+
+//helo
+
+.leaderboards-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: $side-spacing;
+  margin-right: $side-spacing;
 }
