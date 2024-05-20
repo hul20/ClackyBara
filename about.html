@@ -1,10 +1,310 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
-    <title>huhu</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+    initial-scale=1"
+    />
+
+    <title>ClackyBara | Keyboards</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="logos/favicon.ico">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>HULAT LANG GAR</h1>
-    <iframe src="https://giphy.com/embed/oPNq5A3IZC6bugJXeS" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/capybara-the-capy-code-thecapycode-oPNq5A3IZC6bugJXeS">via GIPHY</a></p>
+    <nav id="navbar" class="navver">
+      <div class="nav-left">
+        <a href="index.html">
+          <div class="logo-container">
+            <img class="logo" src="logos/newlogo.png" alt="clackybara logo" />
+          </div>
+        </a>
+        <div class="nav-button-container">
+          <a href="keyboards.html">
+            <button class="nav-button">
+              Keyboards
+            </button>
+          </a>
+          <a href="components.html">
+            <button class="nav-button">
+              Components
+            </button>
+          </a>
+          <a href="typeybara.html">
+            <button class="nav-button">
+              TypeyBara
+            </button>
+          </a>
+          <a href="about.html">
+            <button class="nav-button">
+              About
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-search"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-shopping-bag"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"
+            />
+            <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+
+    <footer>
+      <div class="logo-name-container">
+        <div class="logo-container">
+          <img src="logos/newlogo.png" alt="logo" class="footer-logo" />
+          <h2 style="color: whitesmoke;">ClackyBara</h2>
+        </div>
+        <div class="handle-container">
+          <div class="icons-container">
+            <a href="#">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-facebook"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-instagram"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                  />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M16.5 7.5l0 .01" />
+                </svg>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-x"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                </svg>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-discord"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                  <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                  <path
+                    d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3"
+                  />
+                  <path d="M7 16.5c3.5 1 6.5 1 10 0" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="desc-handle-container">
+            <p class="desc" style="margin-top: 0px;">
+              Craft Your Dream Keyboard. Discover custom mechanical keyboards,
+              parts, and accessories. <br />
+              <br />
+              Join our group buys and find your perfect clack.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="links-container">
+
+        <div class="footer-links">
+          <div class="footer-title-container">
+            <h class="footer-title"> Explore </h>
+          </div>
+          <div class="footer-link-list" id="footer-links">
+            <ul>
+              <li>Barebones Kits</li>
+              <li>Deskmats</li>
+              <li>Switches</li>
+              <li>Keycaps</li>
+              <li>Cases</li>
+              <li>PCBs</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-links">
+          <div class="footer-title-container">
+            <h class="footer-title"> Customer Support </h>
+          </div>
+          <div class="footer-link-list" id="footer-links">
+            <ul>
+              <li>Technical Support Resources</li>
+              <li>Feedback and Reviews</li>
+              <li>Live Chat Support</li>
+              <li>Warranty Service</li>
+              <li>Return Policy</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-links">
+          <div class="footer-title-container">
+            <h class="footer-title"> T & C </h>
+          </div>
+          <div class="footer-link-list" id="footer-links">
+            <ul>
+              <li>Technical Support Resources</li>
+              <li>Feedback and Reviews</li>
+              <li>Live Chat Support</li>
+              <li>Warranty Service</li>
+              <li>Return Policy</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script type="javascript" src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+    myFunction();
+    };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+    } else {
+    navbar.classList.remove("sticky");
+    }
+    }
+    </script>
   </body>
 </html>
