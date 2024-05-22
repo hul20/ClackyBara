@@ -1518,7 +1518,8 @@ key {
 /*=================================*/
 @keyframes screen {
   0%, 90%, 96% {
-    background-image: linear-gradient(to top, #00deff, #00e9e8, #00efb9, #d9f14e, #ebdd12);
+    background-image: url(backgrounds/dg7dnim-9abc2ad3-ef91-4739-95f5-7a07a0f0ecc7.png);
+    background-size: cover;
   }
   93%, 100% {
     background-color: rgba(32, 138, 199, 0.8);
